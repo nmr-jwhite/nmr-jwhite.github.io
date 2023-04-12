@@ -72,6 +72,7 @@ img{
 #sticky-navigation{
     position: sticky;
     top: 0px;
+    z-index: 1000;
 }
 
 #sticky-navigation .logo img{
