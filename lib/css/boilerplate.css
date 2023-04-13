@@ -416,3 +416,9 @@ img{
     line-height: 18px;
     text-align: center;
 }
+
+.image-break small {
+    font-family: 'Source Code Pro', monospace;
+    position: absolute;
+    bottom: 24px;
+  }
