@@ -285,6 +285,20 @@ img{
     height: 100%;
     padding: 15px;
     font-size: 18px;
+    align-items: flex-start;
+}
+
+.content h1{
+    margin-bottom: 0px;
+}
+
+.content p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    margin:22px 0px;
 }
 
 .highlight{
@@ -421,4 +435,54 @@ img{
     font-family: 'Source Code Pro', monospace;
     position: absolute;
     bottom: 24px;
+  }
+
+  footer{
+    min-height: 550px;
+    background: #E9EAEA;
+    padding: 70px 0px;
+    font-size: 18px;
+  }
+
+  footer p{
+    margin-bottom: 0px;
+  }
+
+  footer a{
+    color: #2A3039;
+    text-decoration: none;
+  }
+
+  .footer-menu{
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  .contact-page{
+    margin-top: 25px;
+  }
+
+  .logo-row{
+    margin-top:90px;
+  }
+
+  .footer-logo{
+    max-width: 215px;
+    margin-bottom: 7px;
+  }
+
+  .copyright{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .contract-list {
+    padding-left: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
   }
