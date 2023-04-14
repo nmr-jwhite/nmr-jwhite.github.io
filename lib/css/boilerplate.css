@@ -405,6 +405,10 @@ img{
     background-color: #005984;
 }
 
+.solution-bucket:hover h2{
+    background-color: #005984;
+}
+
 .bucket-hero img {
     width: 75px;
 }
