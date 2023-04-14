@@ -298,7 +298,7 @@ img{
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    margin:22px 0px;
+    margin:22px 0px 0px;
 }
 
 .highlight{
@@ -332,6 +332,10 @@ img{
     bottom: 0px;
     right:0px;
     background-size: 100%;
+}
+
+.content .button{
+    margin-top:25px;
 }
 
 .content-session-dark,
