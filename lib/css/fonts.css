@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'icons';
+    src:  url('../fonts/icons.eot?jsbpl8');
+    src:  url('../fonts/icons.eot?jsbpl8#iefix') format('embedded-opentype'),
+      url('../fonts/icons.ttf?jsbpl8') format('truetype'),
+      url('../fonts/icons.woff?jsbpl8') format('woff'),
+      url('../fonts/icons.svg?jsbpl8#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-middle {
+    vertical-align: middle;
+  }
+  
+  .icon-cert:before {
+    content: "\e90e";
+  }
+  .icon-biometric:before {
+    content: "\e90f";
+  }
+  .icon-retirement:before {
+    content: "\e910";
+  }
+  .icon-arrow-right:before {
+    content: "\e911";
+  }
+  .icon-data-management:before {
+    content: "\e900";
+  }
+  .icon-facilities:before {
+    content: "\e901";
+  }
+  .icon-growth:before {
+    content: "\e902";
+  }
+  .icon-health:before {
+    content: "\e903";
+  }
+  .icon-heart:before {
+    content: "\e904";
+  }
+  .icon-knowledge-management:before {
+    content: "\e905";
+  }
+  .icon-people:before {
+    content: "\e906";
+  }
+  .icon-perks:before {
+    content: "\e907";
+  }
+  .icon-program-management:before {
+    content: "\e908";
+  }
+  .icon-software-development:before {
+    content: "\e909";
+  }
+  .icon-training:before {
+    content: "\e90a";
+  }
+  .icon-unified-communications:before {
+    content: "\e90b";
+  }
+  .icon-vacation:before {
+    content: "\e90c";
+  }
+  .icon-charity:before {
+    content: "\e90d";
+  }
+  
