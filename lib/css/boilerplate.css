@@ -861,10 +861,9 @@ img{
     min-height: 300px;
     text-align: center;
     height: auto;
-    justify-content: center;
     align-items: center;
     display: flex;
-    padding: 15px;
+    padding: 50px 15px 15px;
     flex-flow: column;
     border-right: 1px solid #D9D9D9;
     border-bottom: 1px solid #D9D9D9;
