@@ -932,3 +932,44 @@ img{
   .benefit-icon i {
     font-size: 50px;
   }
+
+  @media(max-width:767px){
+    h1{
+        font-size: 35px;
+        line-height: 39px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+        line-height: 48px;
+    }
+    .content-section.intro h1 {
+        font-size: 38px;
+        line-height: 42px;
+      }
+      .content-section {
+        min-height: 45vh;
+        padding: 75px 0px;
+      }
+
+      .image-break-quote h1{
+        font-size: 35px;
+        line-height: 39px;
+      }
+      
+      .solution-section-headline{
+        flex-flow: column;
+        align-items:flex-start;
+      }
+
+      .solution-bucket-container {
+        flex-flow: column;
+      }
+
+      .solution-bucket{
+        max-width: 100%;
+      }
+  }
