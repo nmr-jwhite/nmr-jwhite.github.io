@@ -1021,4 +1021,10 @@ img{
         margin-top: 25px;
       }
 
+
+      .leader-profiles{
+        flex-flow: column;
+        align-items: center;
+      }
+
   }
