@@ -934,6 +934,43 @@ img{
   }
 
   @media(max-width:767px){
+
+    #main-navigation:after{
+        display: none;
+    }
+
+    #main-navigation.active {
+        background-color: #FFFFFF;
+      }
+
+    .nav-container{
+        flex-flow: column;
+    }
+
+    .nav-links {
+        margin-left: unset;
+    }
+
+    .main-navigation.active .nav-links {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .nav-links ul{
+        flex-flow: column;
+        padding: 25px 0px;
+        align-items: normal;
+    }
+
+    .main-navigation .menu-button {
+        position: absolute;
+        right: 0px;
+    }
+
+    .main-navigation::after {
+        right: 0px;
+      }
+
     h1{
         font-size: 35px;
         line-height: 39px;
@@ -972,4 +1009,16 @@ img{
       .solution-bucket{
         max-width: 100%;
       }
+
+      .image-break-dark::after {
+        width: 20%;
+        height: 148px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .solution-section-headline .button{
+        margin-top: 25px;
+      }
+
   }
