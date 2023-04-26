@@ -573,7 +573,6 @@ img{
 
 .content-section.dark-bg h1{
     color: #FFF;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -584,6 +583,7 @@ img{
 
 .leader-profiles{
     display: flex;
+    flex-flow: row wrap;
     gap: 30px;
     justify-content: center;
     margin-top: 25px;
@@ -687,10 +687,12 @@ img{
     flex-flow: row wrap;
     gap: 15px;
     margin-top: 40px;
+    justify-content: space-between;
   }
 
   .tile {
-    width: 225px;
+    max-width: 225px;
+    width: calc(33.33% - 20px);
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -933,7 +935,24 @@ img{
     font-size: 50px;
   }
 
-  @media(max-width:767px){
+  @media (min-width: 767px) and (max-width:811px){
+    .button {
+      display: block;
+      font-size: 15px;
+    }
+
+    .center-button{
+      justify-self: normal;
+    }
+  }
+
+  @media (max-width: 767px){
+    .solution-bucket-container {
+      flex-flow: column;
+    }
+  }
+
+  @media(max-width:811px){
 
     #main-navigation:after{
         display: none;
@@ -1002,10 +1021,6 @@ img{
         align-items:flex-start;
       }
 
-      .solution-bucket-container {
-        flex-flow: column;
-      }
-
       .solution-bucket{
         max-width: 100%;
       }
@@ -1047,7 +1062,6 @@ img{
 
 
       .leader-profiles{
-        flex-flow: column;
         align-items: center;
       }
 
