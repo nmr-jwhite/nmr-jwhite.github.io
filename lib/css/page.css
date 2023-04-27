@@ -1,0 +1,103 @@
+.page-hero {
+    min-height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+
+  .page-hero h1{
+    color: #FFFFFF;
+  }
+
+  .stats-section {
+    background-color: #E9EAEA;
+  }
+
+  .stat-block {
+    text-align: center;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stat {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+.stat-desc {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.page-content {
+    margin: 100px 0px;
+}
+
+.page-content p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.page-content img {
+    margin: 40px 0px;
+}
+
+.page-content .full-length-quote{
+    margin: 175px 0px;
+}
+
+@media(max-width: 811px){
+    .page-content .full-length-quote{
+        margin: 100px 0px;
+    }
+}
+
+.contact-banner {
+    background-color: #A8B0B9;
+    /* color: #FFF; */
+}
+
+.banner {
+    padding: 50px 0px;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+.banner-content h1 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    /* color: #FFFFFF; */
+}
+
+.banner-content p {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+}
