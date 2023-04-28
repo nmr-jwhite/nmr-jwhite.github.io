@@ -592,6 +592,36 @@ img{
 .profile {
     color: #FFF;
     text-decoration: none;
+    width: 25%;
+  }
+
+  @media(max-width: 992px){
+    .profile {
+      width: 50%;
+    }
+  }
+
+  @media(max-width: 767px){
+    .profile {
+      width: 100%;
+    }
+  }
+
+  .profile-info {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    border: 5px solid #fff;
+    padding: 20px;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+  }
+
+  .profile:hover .profile-info{
+    background-color: #ffffff;
+    color: #2A3039;
+    transition: all 0.3s ease-in;
   }
 
   .profile-image {
@@ -616,6 +646,7 @@ img{
   .profile-title {
     font-style: italic;
     margin-top: 5px;
+    margin-bottom: 0px;
   }
 
   .dark-pattern,
