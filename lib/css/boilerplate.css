@@ -1,6 +1,12 @@
 .wow {
     visibility: hidden;
 }
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  justify-content: flex-start;
+}
 html,
 body{
     color: #2A3039;
@@ -23,6 +29,24 @@ p,a{
 
 img{
     width: 100%;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.logo-sprite{
+  background-image: url('../img/nmr-logo-sprite.svg');
+  width: 165px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: 100% 100px;
+  background-position: top center;
+}
+
+#main-navigation.active .logo-sprite{
+  background-position: bottom center;
+  transition: all 0.3s step-end;
 }
 
 .gray-nurse-bg{
@@ -80,6 +104,7 @@ img{
 
 #main-navigation{
     position: absolute;
+    background-color: rgba(0,0,0,0.3);
 }
 
 #sticky-navigation{
@@ -538,7 +563,7 @@ img{
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     justify-content: flex-end;
   }
 
@@ -1104,4 +1129,110 @@ img{
         transform: rotate(0deg);
       }
 
+  }
+
+
+  /*** Collapse Panels **/
+
+  .blog-filters .panel-heading {
+    padding: 10px 15px;
+    padding-left: 0px;
+    border-bottom: 1px solid #D5DBE0;
+  }
+
+  .blog-filters .panel-heading .panel-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 0px;
+  }
+
+  .blog-filters .panel-heading .panel-title a {
+    color: #2F353F;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: 0px 8px;
+    text-decoration: none;
+  }
+
+  .panel-title .icon {
+    font-size: 5px;
+    margin-left: auto;
+  }
+
+  .panel-body {
+    padding: 0px;
+  }
+
+  .blog-filters .panel-body ul {
+    padding-left: 8px;
+    list-style: none;
+  }
+  .panel-body ul {
+    margin: 1rem 0 0;
+  }
+
+.blog-filters .panel-body ul > li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04px;
+    color: #2F353F;
+    font-family: "PT Sans";
+  }
+
+.blog-filters .panel-body ul > li .form-control {
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 20px;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04px;
+    color: #2F353F;
+  }
+
+.blog-filters .panel-body ul > li input[type="checkbox"]:checked {
+    background-color: #00A2E5;
+  }
+
+.blog-filters .panel-body ul > li input[type="checkbox"] {
+    appearance: none;
+    background-color: #FFF;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D5DBE0;
+    border-radius: 4px;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+  } 
+
+.blog-filters .panel-body ul > li input[type="checkbox"]:before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #FFF;
+    background-color: #00A2E5;
+    display: block;
+  }
+
+.blog-filters .panel-body ul > li input[type="checkbox"]:checked:before {
+    transform: scale(1);
+  }
+
+  .panel-title a:not(.collapsed) .icon {
+    transform: rotate(180deg);
   }

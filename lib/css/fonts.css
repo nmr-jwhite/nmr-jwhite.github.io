@@ -29,6 +29,21 @@
     vertical-align: middle;
   }
   
+  .icon-chevron-down:before {
+    content: "\e912";
+  }
+  .icon-chevron-left:before {
+    content: "\e913";
+  }
+  .icon-chevron-right:before {
+    content: "\e914";
+  }
+  .icon-chevron-up:before {
+    content: "\e915";
+  }
+  .icon-search:before {
+    content: "\e916";
+  }
   .icon-cert:before {
     content: "\e90e";
   }
