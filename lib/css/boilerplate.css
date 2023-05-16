@@ -49,6 +49,12 @@ img{
   transition: all 0.3s step-end;
 }
 
+@media(max-width: 767px){
+  #main-navigation.active .logo-sprite{
+    transition: none;
+  }
+}
+
 .gray-nurse-bg{
     background-color: #E9EAEA;  
 }
