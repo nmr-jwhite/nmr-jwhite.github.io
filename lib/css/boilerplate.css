@@ -7,6 +7,7 @@
   gap: 30px;
   justify-content: flex-start;
 }
+
 html,
 body{
     color: #2A3039;
@@ -27,6 +28,11 @@ p,a{
     font-family: 'PT Sans', sans-serif; 
 }
 
+@media(max-width: 767px){
+  .hidden-sm{
+    display: none;
+  }
+}
 img{
     width: 100%;
 }
@@ -1242,4 +1248,29 @@ img{
 
   .panel-title a:not(.collapsed) .icon {
     transform: rotate(180deg);
+  }
+
+  .column {
+    display: grid;
+    grid: auto / auto auto;
+    min-height: 750px;
+    width: 100%;
+  }
+
+  .column-2 li {
+    display: flex;
+  }
+
+  .column .highlight{
+    display: block;
+    margin-right: 15px;
+  }
+
+  @media(max-width: 992px){
+    .column {
+      display: block;
+      grid: auto / auto auto;
+      height: auto;
+      width: 100%;
+    }
   }
