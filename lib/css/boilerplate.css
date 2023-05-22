@@ -609,7 +609,13 @@ img{
     color: #FFF;
 }
 
-.content-section.dark-bg h1{
+.content-section.dark-blue-bg {
+  background-color: #005983;
+  color: #FFF;
+}
+
+.content-section.dark-bg h1,
+.content-section.dark-blue-bg h1{
     color: #FFF;
     text-transform: uppercase;
 }
